@@ -9,8 +9,17 @@ const login = async (userInfo: UserLogin) => {
       },
       body: JSON.stringify(userInfo)
     });
+    
+    // Throw error if response status is not OK (200-299)
+    if (!response.ok) {
+      const errorData = await response.json(); // Parse error response as JSON
+      throw new Error(`Error: ${errorData.message}`); // Error message    
+    }
 
-    return response;  // Return data from server
+    // Parse the response body as JSON
+    const data = await response.json();
+
+    return data;  // Return data from server
   } catch (err) {
     console.log('Error from user login: ', err);
   }
