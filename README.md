@@ -3,10 +3,6 @@ This is a Kanban Board application that enhances an existing Kanban board by add
 
 You can click to view the live site [here](https://kanban-board-wgq8.onrender.com) on Render. 
 
-![Screenshot of the Deployed Application](public/CandidateSearch.png)
-![Screenshot of the Deployed Application](public/NoCandidatesSaved.png)
-![Screenshot of the Deployed Application](public/PotentialCandidates.png)
-
 ## Table of Contents
 * [Features](#features) 
 * [Installation](#installation)
@@ -16,12 +12,23 @@ You can click to view the live site [here](https://kanban-board-wgq8.onrender.co
 * [Contact Information](#contact-information)
 
 ## Features
-* A secure login page that requires a valid username and password.
-* Authentication via JWT to the server API to manage user sessions.
-* Redirection to the Kanban board after successful login.
-    * Within the Kanban board you can create, edit or delete a ticket that displays in the To Do, In Progress and Done columns. 
-* Automatic session expiration after inactivity.
+* A secure login page that requires a valid username and password for authentication.
+* JWT authentication to securely manage user sessions with the server API.
+* Utilizes a PostgreSQL database to securely store user data.
+* Redirection to the Kanban board after a successful login.
+    * Within the Kanban board, users can create, edit, or delete tickets that are displayed in the To Do, In Progress, and Done columns.
+* Automatic session expiration after a defined period of inactivity for enhanced security.
 
+Home Page
+![Screenshot of the Deployed Application](client/public/MainScreen.png)
+Login Screen
+![Screenshot of the Deployed Application](client/public/LoginScreen.png)
+Kanban Board
+![Screenshot of the Deployed Application](client/public/KanbanBoard.png)
+Edit Ticket
+![Screenshot of the Deployed Application](client/public/EditTicket.png)
+Create Ticket
+![Screenshot of the Deployed Application](client/public/CreateTicket.png)
 
 ## Installation
 For this app you will need to 
